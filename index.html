@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaada AI/ML Transformation Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Avaada AI/ML</h2>
+                <p>Transformation Dashboard</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#overview" class="menu-item active" data-section="overview">Overview</a></li>
+                <li><a href="#phases" class="menu-item" data-section="phases">Phase Progress</a></li>
+                <li><a href="#projects" class="menu-item" data-section="projects">Project Portfolio</a></li>
+                <li><a href="#team" class="menu-item" data-section="team">Team & Organization</a></li>
+                <li><a href="#capability" class="menu-item" data-section="capability">Capability Maturity</a></li>
+                <li><a href="#resources" class="menu-item" data-section="resources">Resource Planning</a></li>
+                <li><a href="#risks" class="menu-item" data-section="risks">Risk Management</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Overview Section -->
+            <section id="overview" class="section active">
+                <div class="section-header">
+                    <h1>AI/ML Transformation Overview</h1>
+                    <p>Executive dashboard showing key transformation metrics and progress</p>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <h3>Current Phase</h3>
+                        <div class="metric-value">Phase 1</div>
+                        <div class="metric-label">Partner-Led Development</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 33%"></div>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Internal Capability</h3>
+                        <div class="metric-value">40%</div>
+                        <div class="metric-label">Target: 80% by Month 36</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Team Size</h3>
+                        <div class="metric-value">8</div>
+                        <div class="metric-label">Target: 25+ by Month 36</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 32%"></div>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Active Projects</h3>
+                        <div class="metric-value">12</div>
+                        <div class="metric-label">Across 4 Categories</div>
+                        <div class="status status--success">On Track</div>
+                    </div>
+                </div>
+
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <h3>Capability Development Timeline</h3>
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1749228511/pplx_code_interpreter/f6d08ebf_pk4stf.jpg" alt="Internal Capability Growth vs Partner Dependency" class="chart-image">
+                    </div>
+                    <div class="chart-container">
+                        <h3>Team Growth Projection</h3>
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1749228716/pplx_code_interpreter/5dc98c10_y7ikzl.jpg" alt="AI/ML Team Growth" class="chart-image">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Phase Progress Section -->
+            <section id="phases" class="section">
+                <div class="section-header">
+                    <h1>Phase Progress Tracker</h1>
+                    <p>Interactive timeline showing transformation phases and milestones</p>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="phase-timeline">
+                        <div class="phase-item active">
+                            <div class="phase-marker"></div>
+                            <div class="phase-content">
+                                <h3>Phase 1: Partner-Led Development</h3>
+                                <p class="phase-duration">0-12 months</p>
+                                <p>Establish foundation through partnerships while building core internal capabilities</p>
+                                <div class="phase-metrics">
+                                    <span class="metric">2-3 POCs</span>
+                                    <span class="metric">20% Internal</span>
+                                    <span class="metric">3-5 Team Members</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phase-item">
+                            <div class="phase-marker"></div>
+                            <div class="phase-content">
+                                <h3>Phase 2: Co-Development</h3>
+                                <p class="phase-duration">6-24 months</p>
+                                <p>Develop targeted internal capabilities while maintaining strategic partnerships</p>
+                                <div class="phase-metrics">
+                                    <span class="metric">5-7 Systems</span>
+                                    <span class="metric">50% Internal</span>
+                                    <span class="metric">12-18 Team Members</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 25%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phase-item">
+                            <div class="phase-marker"></div>
+                            <div class="phase-content">
+                                <h3>Phase 3: Mature Capability</h3>
+                                <p class="phase-duration">18+ months</p>
+                                <p>Achieve internal leadership with selective strategic partnerships</p>
+                                <div class="phase-metrics">
+                                    <span class="metric">10+ Systems</span>
+                                    <span class="metric">80% Internal</span>
+                                    <span class="metric">25+ Team Members</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="milestone-chart">
+                    <h3>Key Milestones & Dependencies</h3>
+                    <canvas id="milestoneChart" width="800" height="400"></canvas>
+                </div>
+            </section>
+
+            <!-- Project Portfolio Section -->
+            <section id="projects" class="section">
+                <div class="section-header">
+                    <h1>Project Portfolio</h1>
+                    <p>Interactive view of all projects across different categories</p>
+                </div>
+
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="quick-wins">Quick Wins</button>
+                    <button class="filter-btn" data-filter="strategic">Strategic Partnerships</button>
+                    <button class="filter-btn" data-filter="internal">Internal Innovation</button>
+                    <button class="filter-btn" data-filter="transformational">Transformational</button>
+                </div>
+
+                <div class="project-grid">
+                    <div class="project-card" data-category="quick-wins">
+                        <div class="project-header">
+                            <h3>Document Processing Automation</h3>
+                            <span class="status status--success">Active</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="category-tag quick-wins">Quick Wins</span>
+                            <span class="timeline">1-3 months</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric-item">
+                                <span class="label">Complexity</span>
+                                <div class="metric-bar">
+                                    <div class="fill" style="width: 20%"></div>
+                                </div>
+                            </div>
+                            <div class="metric-item">
+                                <span class="label">Value</span>
+                                <div class="metric-bar">
+                                    <div class="fill" style="width: 40%"></div>
+                                </div>
+                            </div>
+                            <div class="metric-item">
+                                <span class="label">Dependencies</span>
+                                <div class="metric-bar">
+                                    <div class="fill" style="width: 20%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="strategic">
+                        <div class="project-header">
+                            <h3>Energy Forecasting Platform</h3>
+                            <span class="status status--warning">Planning</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="category-tag strategic">Strategic Partnership</span>
+                            <span class="timeline">4-9 months</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric-item">
+                                <span class="label">Complexity</span>
+                                <div class="metric-bar">
+                                    <div class="fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="metric-item">
+                                <span class="label">Value</span>
+                                <div class="metric-bar">
+                                    <div class="fill" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="metric-item">
+                                <span class="label">Dependencies</span>
+                                <div class="metric-bar">
+                                    <div class="fill" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="internal">
+                        <div class="project-header">
+                            <h3>Predictive Maintenance System</h3>
+                            <span class="status status--info">Development</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="category-tag internal">Internal Innovation</span>
+                            <span class="timeline">3-6 months</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric-item">
+                                <span class="label">Complexity</span>
+                                <div class="metric-bar">
+                                    <div class="fill" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="metric-item">
+                                <span class="label">Value</span>
+                                <div class="metric-bar">
+                                    <div class="fill" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="metric-item">
+                                <span class="label">Dependencies</span>
+                                <div class="metric-bar">
+                                    <div class="fill" style="width: 40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="transformational">
+                        <div class="project-header">
+                            <h3>Smart Grid Optimization</h3>
+                            <span class="status status--error">Research</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="category-tag transformational">Transformational</span>
+                            <span class="timeline">12-18 months</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric-item">
+                                <span class="label">Complexity</span>
+                                <div class="metric-bar">
+                                    <div class="fill" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="metric-item">
+                                <span class="label">Value</span>
+                                <div class="metric-bar">
+                                    <div class="fill" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="metric-item">
+                                <span class="label">Dependencies</span>
+                                <div class="metric-bar">
+                                    <div class="fill" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-analysis">
+                    <h3>Project Categorization Framework</h3>
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1749228613/pplx_code_interpreter/b8b0b2df_alndla.jpg" alt="Project Risk vs Value Assessment" class="chart-image">
+                </div>
+            </section>
+
+            <!-- Team & Organization Section -->
+            <section id="team" class="section">
+                <div class="section-header">
+                    <h1>Team & Organization</h1>
+                    <p>Team growth visualization and organizational structure</p>
+                </div>
+
+                <div class="team-overview">
+                    <div class="current-team">
+                        <h3>Current Team Composition (Month 12)</h3>
+                        <div class="team-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">8</span>
+                                <span class="stat-label">Total Members</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">3</span>
+                                <span class="stat-label">Data Scientists</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">2</span>
+                                <span class="stat-label">ML Engineers</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">2</span>
+                                <span class="stat-label">Data Engineers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="org-structure">
+                    <h3>AI/ML Center of Excellence Structure</h3>
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1749228759/gpt4o_images/qrndayc9nx2njnz37fch.png" alt="AI/ML Center of Excellence Organizational Structure" class="chart-image">
+                </div>
+
+                <div class="hiring-roadmap">
+                    <h3>Hiring Roadmap</h3>
+                    <div class="roadmap-timeline">
+                        <div class="roadmap-item">
+                            <span class="roadmap-month">Month 18</span>
+                            <div class="roadmap-content">
+                                <strong>AI Director</strong>
+                                <p>Strategic leadership role</p>
+                            </div>
+                        </div>
+                        <div class="roadmap-item">
+                            <span class="roadmap-month">Month 24</span>
+                            <div class="roadmap-content">
+                                <strong>Team Leads (2)</strong>
+                                <p>Technical leadership for specialized teams</p>
+                            </div>
+                        </div>
+                        <div class="roadmap-item">
+                            <span class="roadmap-month">Month 30</span>
+                            <div class="roadmap-content">
+                                <strong>Senior Data Scientists (4)</strong>
+                                <p>Domain expertise and advanced analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Capability Maturity Section -->
+            <section id="capability" class="section">
+                <div class="section-header">
+                    <h1>Capability Maturity Assessment</h1>
+                    <p>Current state vs target state across key dimensions</p>
+                </div>
+
+                <div class="maturity-overview">
+                    <canvas id="maturityChart" width="600" height="400"></canvas>
+                </div>
+
+                <div class="maturity-dimensions">
+                    <div class="dimension-card">
+                        <h3>Data & Analytics</h3>
+                        <div class="maturity-level">
+                            <span class="current">Current: Developing</span>
+                            <span class="target">Target: Managed</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    <div class="dimension-card">
+                        <h3>ML Engineering</h3>
+                        <div class="maturity-level">
+                            <span class="current">Current: Initial</span>
+                            <span class="target">Target: Defined</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 20%"></div>
+                        </div>
+                    </div>
+                    <div class="dimension-card">
+                        <h3>AI Governance</h3>
+                        <div class="maturity-level">
+                            <span class="current">Current: Initial</span>
+                            <span class="target">Target: Managed</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 15%"></div>
+                        </div>
+                    </div>
+                    <div class="dimension-card">
+                        <h3>Technology Infrastructure</h3>
+                        <div class="maturity-level">
+                            <span class="current">Current: Developing</span>
+                            <span class="target">Target: Optimized</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 35%"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resource Planning Section -->
+            <section id="resources" class="section">
+                <div class="section-header">
+                    <h1>Resource Planning</h1>
+                    <p>Budget allocation, technology stack, and infrastructure roadmap</p>
+                </div>
+
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h3>Budget Allocation by Phase</h3>
+                        <canvas id="budgetChart" width="400" height="300"></canvas>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Technology Stack</h3>
+                        <div class="tech-stack">
+                            <div class="tech-category">
+                                <h4>Data Platforms</h4>
+                                <ul>
+                                    <li>Azure Data Factory</li>
+                                    <li>Databricks</li>
+                                    <li>Snowflake</li>
+                                </ul>
+                            </div>
+                            <div class="tech-category">
+                                <h4>ML/AI Tools</h4>
+                                <ul>
+                                    <li>Azure ML Studio</li>
+                                    <li>TensorFlow/PyTorch</li>
+                                    <li>MLflow</li>
+                                </ul>
+                            </div>
+                            <div class="tech-category">
+                                <h4>Analytics</h4>
+                                <ul>
+                                    <li>Power BI</li>
+                                    <li>Tableau</li>
+                                    <li>Custom Dashboards</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="infrastructure-roadmap">
+                    <h3>Infrastructure Development Roadmap</h3>
+                    <div class="roadmap-phases">
+                        <div class="phase-block">
+                            <h4>Phase 1 (0-12 months)</h4>
+                            <ul>
+                                <li>Cloud infrastructure setup</li>
+                                <li>Basic data pipelines</li>
+                                <li>Development environments</li>
+                            </ul>
+                        </div>
+                        <div class="phase-block">
+                            <h4>Phase 2 (6-24 months)</h4>
+                            <ul>
+                                <li>Production ML pipelines</li>
+                                <li>Model deployment platform</li>
+                                <li>Advanced analytics tools</li>
+                            </ul>
+                        </div>
+                        <div class="phase-block">
+                            <h4>Phase 3 (18+ months)</h4>
+                            <ul>
+                                <li>Enterprise AI platform</li>
+                                <li>Advanced optimization tools</li>
+                                <li>Innovation lab setup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Risk Management Section -->
+            <section id="risks" class="section">
+                <div class="section-header">
+                    <h1>Risk Management</h1>
+                    <p>Risk register, mitigation strategies, and action items</p>
+                </div>
+
+                <div class="risk-matrix">
+                    <h3>Risk Probability vs Impact Matrix</h3>
+                    <div class="matrix-container">
+                        <div class="matrix-grid">
+                            <div class="risk-item high-high" data-risk="talent">
+                                Talent Acquisition
+                            </div>
+                            <div class="risk-item medium-high" data-risk="tech">
+                                Technology Integration
+                            </div>
+                            <div class="risk-item medium-medium" data-risk="change">
+                                Change Management
+                            </div>
+                            <div class="risk-item low-high" data-risk="budget">
+                                Budget Constraints
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="risk-register">
+                    <h3>Risk Register</h3>
+                    <div class="risk-table">
+                        <div class="risk-row header">
+                            <span>Risk</span>
+                            <span>Probability</span>
+                            <span>Impact</span>
+                            <span>Mitigation Strategy</span>
+                            <span>Status</span>
+                        </div>
+                        <div class="risk-row">
+                            <span>Talent Acquisition Challenges</span>
+                            <span class="risk-level high">High</span>
+                            <span class="risk-level high">High</span>
+                            <span>Progressive hiring, competitive packages</span>
+                            <span class="status status--warning">Active</span>
+                        </div>
+                        <div class="risk-row">
+                            <span>Technology Integration Complexity</span>
+                            <span class="risk-level medium">Medium</span>
+                            <span class="risk-level high">High</span>
+                            <span>Pilot projects, gradual integration</span>
+                            <span class="status status--info">Monitoring</span>
+                        </div>
+                        <div class="risk-row">
+                            <span>Change Management Resistance</span>
+                            <span class="risk-level medium">Medium</span>
+                            <span class="risk-level medium">Medium</span>
+                            <span>Training programs, early wins</span>
+                            <span class="status status--success">Controlled</span>
+                        </div>
+                        <div class="risk-row">
+                            <span>Budget Constraints</span>
+                            <span class="risk-level low">Low</span>
+                            <span class="risk-level high">High</span>
+                            <span>Phased approach, ROI demonstration</span>
+                            <span class="status status--success">Controlled</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
